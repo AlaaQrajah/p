@@ -1,17 +1,48 @@
-import React, { useState } from "react";
-
+import React, { useState, useContext } from "react";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { ThemeContext } from "../context/ThemeContext";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
+import { MdDarkMode } from "react-icons/md";
+
+import { MdLightMode } from "react-icons/md";
+
+
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  
+  const changeLanguage = () => {
+    const newLang = i18n.language === 'ar' ? 'en' : 'ar';
+    i18n.changeLanguage(newLang);
+    document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
+  };
 
   return (
     <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
-        Portfolio
-      </a>
+      <Link className={styles.title} to="/">
+        AlaaQrajah-Portfolio
+      </Link>
       <div className={styles.menu}>
+        <div className={styles.controls}>
+          <button 
+            className={styles.themeToggle} 
+            onClick={toggleTheme}
+            aria-label={theme === 'dark' ? t('theme.light') : t('theme.dark')}
+          >
+            {theme === 'dark' ?   <MdLightMode />:   <MdDarkMode /> }
+          </button>
+          <button 
+            className={styles.langToggle} 
+            onClick={changeLanguage}
+            aria-label={i18n.language === 'ar' ? t('language.en') : t('language.ar')}
+          >
+            {i18n.language === 'ar' ? 'EN' : 'عربي'}
+          </button>
+        </div>
         <img
           className={styles.menuBtn}
           src={
@@ -27,16 +58,16 @@ export const Navbar = () => {
           onClick={() => setMenuOpen(false)}
         >
           <li>
-            <a href="#about">About</a>
+            <Link to="/about">{t('navbar.about')}</Link>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <Link to="/experience">{t('navbar.experience')}</Link>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <Link to="/projects">{t('navbar.projects')}</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="/contact">{t('navbar.contact')}</Link>
           </li>
         </ul>
       </div>

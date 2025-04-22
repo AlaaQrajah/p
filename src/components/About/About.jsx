@@ -1,14 +1,16 @@
 import React from "react";
-
+import { useTranslation } from "react-i18next";
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
 
 export const About = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className={styles.container} id="about">
-      <h2 className={styles.title}>About</h2>
+      <h2 className={styles.title}>{t('about.title')}</h2>
       <div className={styles.content}>
-        <img
+        <img  
           src={getImageUrl("about/aboutImage.png")}
           alt="Me sitting with a laptop"
           className={styles.aboutImage}
@@ -17,30 +19,27 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
-              <h3>Frontend Developer</h3>
+              <h3>{t('about.frontend.title')}</h3>
               <p>
-                I'm a frontend developer with experience in building responsive
-                and optimized sites
+                {t('about.frontend.description')}
               </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
             <div className={styles.aboutItemText}>
-              <h3>Backend Developer</h3>
+              <h3>{t('about.backend.title')}</h3>
               <p>
-                I have experience developing fast and optimised back-end systems
-                and APIs
+                {t('about.backend.description')}
               </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
+            <img width={60} src={getImageUrl("about/Full-stack.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
+              <h3>{t('about.FullStack.title')}</h3>
               <p>
-                I have designed multiple landing pages and have created design
-                systems as well
+                {t('about.FullStack.description')}
               </p>
             </div>
           </li>

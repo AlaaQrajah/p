@@ -1,11 +1,13 @@
 import React from "react";
-
+import { useTranslation } from "react-i18next";
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
 
 export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
 }) => {
+  const { t } = useTranslation();
+  
   return (
     <div className={styles.container}>
       <img
@@ -26,10 +28,10 @@ export const ProjectCard = ({
       </ul>
       <div className={styles.links}>
         <a href={demo} className={styles.link}>
-          Demo
+          {t('projects.demo')}
         </a>
         <a href={source} className={styles.link}>
-          Source
+          {t('projects.source')}
         </a>
       </div>
     </div>

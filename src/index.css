@@ -8,3 +8,16 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* دعم الاتجاه RTL للغة العربية */
+html[dir="rtl"] .menuItems {
+  padding-right: 0;
+}
+
+html[dir="rtl"] .aboutItems {
+  padding-right: 0;
+}
+
+html[dir="rtl"] .historyItem ul {
+  padding-right: 20px;
+}

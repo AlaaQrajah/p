@@ -1,11 +1,20 @@
 :root {
-  /* Colours */
+  /* الألوان الافتراضية (الوضع الليلي) */
   --color-text: #fff;
   --color-primary: #576cbc;
   --color-secondary: #19376d;
   --color-dark: #0b2447;
   --color-bg: #04152d;
 
-  /* Fonts */
+  /* الخطوط */
   --font-roboto: "Roboto";
+}
+
+/* الوضع النهاري */
+[data-theme="light"] {
+  --color-text: #04152d;
+  --color-primary: #576cbc;
+  --color-secondary: #a5d7e8;
+  --color-dark: #19376d;
+  --color-bg: #f5f5f5;
 }

@@ -1,0 +1,49 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Alaa Qaraja",
+    "description": " am a student in the Faculty of Information Engineering, Department of Software Engineering. I have extensive experience in web development, specializing in creating scalable and responsive web applications using modern frameworks such as React.js and as a front-end UI intern. In addition, I work as a freelancer, delivering high-quality web development projects, with a focus on clean code and innovative solutions.",
+    "contactBtn": "Contact Me"
+  },
+  "about": {
+    "title": "About",
+    "frontend": {
+      "title": "Frontend Developer",
+      "description": "I'm a frontend developer with experience in building responsive and optimized sites"
+    },
+    "backend": {
+      "title": "Backend Developer",
+      "description": "I have experience developing fast and optimised back-end systems and APIs"
+    },
+    "FullStack": {
+      "title": "Full-stack Developer",
+      "description": "I have the ability to develop web applications from the front end to the back end, with a focus on delivering a seamless user experience and high performance."
+    }
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "projects": {
+    "title": "Projects",
+    "demo": "Demo",
+    "source": "Source"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Feel free to reach out!"
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode"
+  },
+  "language": {
+    "en": "English",
+    "ar": "Arabic"
+  }
+}

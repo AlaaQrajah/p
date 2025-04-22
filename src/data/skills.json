@@ -20,11 +20,16 @@
     "imageSrc": "skills/graphql.png"
   },
   {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
+    "title": "JavaScript",
+    "imageSrc": "skills/js.png"
   },
   {
     "title": "Figma",
     "imageSrc": "skills/figma.png"
+  }
+   ,
+  {
+    "title": "GitHup",
+    "imageSrc": "skills/github.png"
   }
 ]
