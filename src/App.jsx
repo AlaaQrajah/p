@@ -1,4 +1,4 @@
-import styles from "./App.module.css";
+import styles from "../public/styles/App/App.module.css";
 import { AppRouter } from "./Router/Layout/LayoutAppRouter";
 
 function App() {

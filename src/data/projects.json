@@ -1,26 +1,23 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.co1m",
-    "source": "https://www.github.com1"
+    "title": "Interactive gaming ",
+    "imageSrc": "projects/project1.jpg",
+    "description": "An interactive map-based gaming platform that lets you explore and locate locations around the world in a fun and educational way.",
+    "skills": ["React", "TailwindCss", "NodeJs", "Router"],
+    "demo": "https://graduation-project-in-maps.vercel.app/"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com1",
-    "source": "https://www.github.com1"
+    "title": "online store",
+    "imageSrc": "projects/onlie.png",
+    "description": "An online store that offers products such as smartphones, computers, electronics, and accessories.",
+    "skills": ["TailwindCss", "Css", "Html"],
+    "demo": "https://the-second-project-in-cloud-soft.vercel.app/"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com1",
-    "source": "https://www.github.com1"
+    "title": "Store control panel",
+    "imageSrc": "projects/image.png",
+    "description": "A control panel to manage an online store. Statistics such as the number of registered students, the number of available products, and monthly profits.",
+    "skills": ["Bootstrap", "Css", "Html"],
+    "demo": "https://dashboard-in-clode-soft.vercel.app/"
   }
 ]

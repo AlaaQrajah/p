@@ -1,29 +1,35 @@
 [
   {
-    "role": "aaaaaaaaaaaaaa",
-    "organisation": "aaaaaaaaaaaaaa",
-    "startDate": "aaaaaaaaaaaaaa",
-    "endDate": "vaaaaaaaaaaaaaa",
-    "experiences": ["aaaaaaaaaaaaaa"],
-    "imageSrc": "aaaaaaaaaaaaaa"
-  },
-  {
-    "role": "aaaaaaaaaaaaaa",
-    "organisation": "aaaaaaaaaaaaaa",
-    "startDate": "aaaaaaaaaaaaaa",
-    "endDate": "aaaaaaaaaaaaaa",
-    "experiences": ["aaaaaaaaaaaaaa"],
-    "imageSrc": "aaaaaaaaaaaaaa"
-  },
-  {
-    "role": "aaaaaaaaaaaaaa",
-    "organisation": "aaaaaaaaaaaaaa",
-    "startDate": "aaaaaaaaaaaaaa",
-    "endDate": "aaaaaaaaaaaa",
+    "role": "Front End Developer",
+    "organisation": "MAPS Organization",
+    "startDate": "March 2024",
+    "endDate": "Present",
     "experiences": [
-      "aaaaaaaaaaaaaa",
-      "aaaaaaaaaaaaaaa"
+      "Developed responsive websites using React and Tailwind CSS.",
+      "Integrated REST APIs and managed state using Redux."
     ],
-    "imageSrc": " aaaaaaaaaaaaaaaa"
+    "imageSrc": "history/frontEnd.jpg"
+  },
+  {
+    "role": "Intern Web Developer",
+    "organisation": "Medad Academy",
+    "startDate": "January 2024",
+    "endDate": "April 2024",
+    "experiences": [
+      "Built multiple front-end projects using HTML, CSS, and JavaScript.",
+      "Collaborated in team projects and participated in weekly code reviews."
+    ],
+    "imageSrc": "history/midad.png"
+  },
+  {
+    "role": "Freelance Web Developer",
+    "organisation": "Self-Employed",
+    "startDate": "June 2023",
+    "endDate": "December 2023",
+    "experiences": [
+      "Created portfolio websites for local clients using React and Next.js.",
+      "Implemented multi-language support and optimized for SEO."
+    ],
+    "imageSrc": "history/HtmlCss.png"
   }
 ]

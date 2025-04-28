@@ -10,12 +10,10 @@ import { ContactPage } from "../../pages/ContactPage";
 
 export const AppRouter = () => {
   const { i18n } = useTranslation();
-  
-  useEffect(() => {
-    // تعيين اتجاه الصفحة بناءً على اللغة الحالية
-    document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
-  }, [i18n.language]);
-  
+    useEffect(() => {
+      document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
+    }, [i18n.language]);
+
   return (
     <Router>
       <Navbar />

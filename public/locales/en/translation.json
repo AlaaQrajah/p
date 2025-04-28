@@ -4,7 +4,8 @@
     "about": "About",
     "experience": "Experience",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "logo": "AlaaQrajah-Portfolio"
   },
   "hero": {
     "greeting": "Hi, I'm Alaa Qaraja",
@@ -44,6 +45,7 @@
   },
   "language": {
     "en": "English",
-    "ar": "Arabic"
+    "ar": "Arabic",
+    "tr": "Türkçe"
   }
 }
