@@ -1,9 +1,8 @@
-import styles from "../public/styles/App/App.module.css";
 import { AppRouter } from "./Router/Layout/LayoutAppRouter";
-
+import "../public/styles/App/App.css";
 function App() {
   return (
-    <div className={styles.App}>
+    <div className="App">
       <AppRouter />
     </div>
   );

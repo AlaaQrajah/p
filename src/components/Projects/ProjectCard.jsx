@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import styles from "../../../public/styles/Projects/ProjectCard.module.css";
+import "../../styles/Projects/ProjectCard.css";
 import { getImageUrl } from "../../utils";
 
 export const ProjectCard = ({
@@ -9,25 +9,25 @@ export const ProjectCard = ({
   const { t } = useTranslation();
 
   return (
-    <div className={styles.container}>
+    <div className="containerProjectCard">
       <img
         src={getImageUrl(imageSrc)}
         alt={`Image of ${title}`}
-        className={styles.image}
+        className="imageProjectCard"
       />
-      <h3 className={styles.title}>{title}</h3>
-      <p className={styles.description}>{description}</p>
-      <ul className={styles.skills}>
+      <h3 className="titleProjectCard">{title}</h3>
+      <p className="descriptionProjectCard">{description}</p>
+      <ul className="skillsProjectCard">
         {skills.map((skill, id) => {
           return (
-            <li key={id} className={styles.skill}>
+            <li key={id} className="skillProjectCard">
               {skill}
             </li>
           );
         })}
       </ul>
-      <div className={styles.links}>
-        <a href={demo} className={styles.animatedBtn} target="/">
+      <div className="linksProjectCard">
+        <a href={demo} className="animatedBtnProjectCard" target="/">
           {t("projects.demo")}
         </a>
       </div>

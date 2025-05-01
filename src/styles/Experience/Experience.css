@@ -1,0 +1,117 @@
+@import "../vars.css";
+@import "../common.css"; 
+.contentExperience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 14px;
+}
+
+.skillsExperience{
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+}
+
+.skillExperience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+
+.skillImageContainerExperience {
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+
+.skillImageContainerExperience img {
+  width: 75px;
+}
+
+.skillExperience p {
+  font-size: 25px;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+.historyExperience {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.historyItemExperience {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  background: #19376d;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.historyItemExperience img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.historyItemDetailsExperience {
+  font-family: var(--font-roboto);
+}
+
+.historyItemDetailsExperience h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.historyItemDetailsExperience p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.historyItemDetailsExperience ul {
+  margin-top: 6px;
+  list-style-position: inside;
+  font-size: 25px;
+  list-style-type: disc;
+  margin-left: 17px;
+}
+
+@media screen and (max-width: 830px) {
+  .contentExperience {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .skillsExperience {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .historyExperience {
+    width: 100%;
+    gap: 9px;
+  }
+  .historyItemExperience {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .historyItemExperience img {
+    width: 100%;
+    height: 2%;
+  }
+}

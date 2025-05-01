@@ -1,19 +1,19 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import styles from "../../../public/styles/Hero/Hero.module.css";
+import "../../styles/Hero/Hero.css";
 import { getImageUrl } from "../../utils";
 
 export const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section className={styles.container}>
-      <div className={styles.content}>
-        <h1 className={styles.title}>{t("hero.greeting")}</h1>
-        <p className={styles.description}>{t("hero.description")}</p>
+    <section className="containerHero">
+      <div className="contentHero">
+        <h1 className="titleHero">{t("hero.greeting")}</h1>
+        <p className="descriptionHero">{t("hero.description")}</p>
         <a
           href="https://wa.me/31616671557"
-          className={styles.animatedBtn}
+          className="animatedBtnHero"
           target="/"
         >
           {t("hero.contactBtn")}
@@ -22,10 +22,10 @@ export const Hero = () => {
       <img
         src={getImageUrl("hero/heroImage.png")}
         alt="Hero image of me"
-        className={styles.heroImg}
+        className="heroImgHero"
       />
-      <div className={styles.topBlur} />
-      <div className={styles.bottomBlur} />
+      <div className="topBlurHero" />
+      <div className="bottomBlurHero" />
     </section>
   );
 };

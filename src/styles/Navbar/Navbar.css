@@ -1,6 +1,6 @@
 @import "../vars.css";
 
-.navbar {
+.navbarNavbar {
   position: relative;
   display: flex;
   align-items: center;
@@ -9,7 +9,7 @@
   padding-top: 30px;
   z-index: 2;
   margin: 0 10%;
-background-color: rgba(11, 36, 71, 0.4); 
+  background-color: rgba(11, 36, 71, 0.4);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
@@ -21,30 +21,29 @@ background-color: rgba(11, 36, 71, 0.4);
   align-items: center;
 }
 
-.title {
+.titleNavbar {
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
 }
 
-.menuBtn {
+.menuBtnNavbar {
   display: none;
 }
 
-.menu {
+.menuNavbar {
   display: flex;
   align-items: center;
 }
 
-.controls {
+.controlsNavbar {
   display: flex;
   gap: 10px;
   margin-right: 20px;
 }
-
-.themeToggle,
-.langToggle {
+.themeToggleNavbar,
+.langToggleNavbar {
   background: var(--color-primary);
   color: var(--color-text);
   border: none;
@@ -59,34 +58,33 @@ background-color: rgba(11, 36, 71, 0.4);
   transition: all 0.3s ease;
 }
 
-.themeToggle:hover,
-.langToggle:hover {
+.themeToggleNavbar:hover,
+.langToggleNavbar:hover {
   transform: scale(1.1);
 }
 
-.menuItems {
+.menuItemsNavbar {
   display: flex;
   gap: 47px;
   list-style: none;
 }
 
-.menuItems a {
+.menuItemsNavbar a {
   font-size: 25px;
   color: var(--color-text);
   text-decoration: none;
 }
 
 @media screen and (max-width: 830px) {
-  .navbar {
+  .navbarNavbar {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 10px;
   }
 
-  .menu {
+  .menuNavbar {
     position: absolute;
-    right: 0;
-    margin-right: -10%;
+    right: -45px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -94,19 +92,19 @@ background-color: rgba(11, 36, 71, 0.4);
     z-index: 3;
   }
 
-  .controls {
+  .controlsNavbar {
     margin-bottom: 10px;
     margin-left: -12px;
     display: flex;
     flex-direction: row;
   }
 
-  .menuBtn {
+  .menuBtnNavbar {
     display: block;
     cursor: pointer;
   }
 
-  .menuItems {
+  .menuItemsNavbar {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -116,11 +114,11 @@ background-color: rgba(11, 36, 71, 0.4);
     border-radius: 8px;
   }
 
-  .menuOpen {
+  .menuOpenNavbar {
     display: flex;
   }
 }
-.animatedBtn {
+.animatedBtnNavbar {
   padding: 12px 30px;
   font-size: 16px;
   font-weight: bold;
@@ -135,7 +133,7 @@ background-color: rgba(11, 36, 71, 0.4);
   overflow: hidden;
 }
 
-.animatedBtn::before {
+.animatedBtnNavbar::before {
   content: "";
   position: absolute;
   top: 0;
@@ -148,11 +146,35 @@ background-color: rgba(11, 36, 71, 0.4);
   transition: left 0.5s ease;
 }
 
-.animatedBtn:hover::before {
+.animatedBtnNavbar:hover::before {
   left: 125%;
 }
 
-.animatedBtn:hover {
+.animatedBtnNavbar:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.menuItemsNavbar a {
+  font-size: 25px;
+  color: var(--color-text);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menuItemsNavbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  background-color: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease-in-out;
+}
+
+.menuItemsNavbar a:hover::after {
+  transform: scaleX(1);
 }

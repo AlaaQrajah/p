@@ -1,28 +1,29 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import styles from "../../../public/styles/Contact/Contact.module.css";
+import "../../styles/Contact/Contact.css";
 import { getImageUrl } from "../../utils";
 
 export const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <footer id="contact" className={styles.container}>
-      <div className={styles.text}>
+    <footer id="contact" className="containerContact">
+      <div className="textContact">
         <h2>{t("contact.title")}</h2>
         <p>{t("contact.subtitle")}</p>
       </div>
 
-      <ul className={styles.links}>
-        <li className={styles.link}>
+      <ul className="linksContact">
+        <li className="linkContact">
           <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:alaaqaraja2004@gmail.com">
-            alaaqaraja2004@gmail.com
-          </a>
+          <a href="mailto:alaaqaraja2004@gmail.com">alaaqaraja2004@gmail.com</a>
         </li>
 
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/linkedinIcon.png")} alt="LinkedIn icon" />
+        <li className="linkContact">
+          <img
+            src={getImageUrl("contact/linkedinIcon.png")}
+            alt="LinkedIn icon"
+          />
           <a
             href="https://www.linkedin.com/in/alaa-qarajah-7a4882352/"
             target="_blank"
@@ -32,7 +33,7 @@ export const Contact = () => {
           </a>
         </li>
 
-        <li className={styles.link}>
+        <li className="linkContact">
           <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
           <a
             href="https://github.com/AlaaQrajah"

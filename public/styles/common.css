@@ -25,10 +25,10 @@
   text-transform: uppercase;
   color: var(--color-text);
 }
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 430px) {
   .title {
     text-align: center;
-    padding-bottom:17px;
-    padding-top:1px;
+    padding-bottom: 17px;
+    padding-top: 1px;
   }
 }

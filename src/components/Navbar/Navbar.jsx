@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ThemeContext } from "../../../src/components/context/ThemeContext"; // Fixed import path
-import styles from "../../../public/styles/Navbar/Navbar.module.css"; // Fixed CSS import path
+import "../../styles/Navbar/Navbar.css"; // Fixed CSS import path
 import { getImageUrl } from "../../utils";
 import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
@@ -22,14 +22,13 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className={styles.navbar}>
-      <Link className={styles.title} to="/"
-            >
+    <nav className="navbarNavbar">
+      <Link className="titleNavbar" to="/">
         {t("navbar.logo")}
       </Link>
-      <div className={styles.menu}>
+      <div className="menuNavbar">
         <img
-          className={styles.menuBtn}
+          className="menuBtnNavbar"
           src={
             menuOpen
               ? getImageUrl("nav/closeIcon.png")
@@ -39,13 +38,13 @@ export const Navbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
         />
         <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+          className={`menuItemsNavbar ${menuOpen ? "menuOpenNavbar" : ""}`}
           onClick={() => setMenuOpen(false)}
         >
           <li>
-            <div className={styles.controls}>
+            <div className="controlsNavbar">
               <button
-                className={styles.animatedBtn}
+                className="animatedBtnNavbar"
                 onClick={toggleTheme}
                 aria-label={
                   theme === "dark" ? t("theme.light") : t("theme.dark")
@@ -54,7 +53,7 @@ export const Navbar = () => {
                 {theme === "dark" ? <MdLightMode /> : <MdDarkMode />}
               </button>
               <button
-                className={styles.animatedBtn}
+                className="animatedBtnNavbar"
                 onClick={changeLanguage}
                 aria-label={
                   i18n.language === "ar" ? t("language.en") : t("language.ar")

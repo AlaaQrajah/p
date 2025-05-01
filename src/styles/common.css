@@ -1,0 +1,88 @@
+/* Common styles for all components */
+.containerProjects,
+.containerAbout,
+.containerExperience,
+.containerHero,
+.containerProjects {
+  color: var(--color-text);
+  margin-top: 76px;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Special container for Contact that needs full width */
+.containerFullWidthProjects,
+.containerFullWidthAbout,
+.containerFullWidthExperience,
+.containerFullWidthHero,
+.containerFullWidthProjects {
+  color: var(--color-text);
+  margin-top: 120px;
+  width: 100vw;
+  padding: 58px 10%;
+  background-color: var(--color-secondary);
+}
+
+/* Common title style */
+.titleProjects,
+.titleProjectsAbout,
+.titleProjectsExperience,
+.titleProjectsHero .titleProjectsProjects {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+@media screen and (max-width: 430px) {
+  .titleProjects,
+  .titleProjectsAbout,
+  .titleProjectsExperience,
+  .titleProjectsHero .titleProjectsProjects {
+    text-align: center;
+    padding-bottom: 17px;
+    padding-top: 1px;
+  }
+}
+.animatedBtnHero,
+.animatedBtnProjects {
+  padding: 12px 30px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.animatedBtnHero::before,
+.animatedBtnProjects::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-25deg);
+  transition: left 0.5s ease;
+}
+
+.animatedBtnHero:hover::before,
+.animatedBtnProjects:hover::before {
+  left: 125%;
+}
+
+.animatedBtnHero:hover,
+.animatedBtnProjects:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}

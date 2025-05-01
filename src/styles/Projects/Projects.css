@@ -1,0 +1,13 @@
+@import "../vars.css";
+@import "../common.css";
+
+.projectsProjects {
+  margin-top: 37px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}

@@ -1,10 +1,6 @@
 import React from "react";
 import { Experience } from "../components/Experience/Experience";
-
+import { Layout } from "../Router/Layout/Layout";
 export const ExperiencePage = () => {
-  return (
-    <div style={{ marginTop: "100px" }}>
-      <Experience />
-    </div>
-  );
+  return <Layout><Experience /></Layout> ;
 };

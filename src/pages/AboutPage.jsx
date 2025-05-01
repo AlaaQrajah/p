@@ -1,10 +1,6 @@
 import React from "react";
 import { About } from "../components/About/About";
-
+import { Layout } from "../Router/Layout/Layout";
 export const AboutPage = () => {
-  return (
-    <div style={{ marginTop: "100px" }}>
-      <About />
-    </div>
-  );
+  return <Layout><About /></Layout> ;
 };

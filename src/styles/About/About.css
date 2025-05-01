@@ -1,25 +1,16 @@
 @import "../vars.css";
 @import "../common.css";
-
-/* Override container for About specific styling */
-.container {
-  background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  padding: 73px;
-  margin-top: 129px;
-}
-
-.content {
+.contentAbout {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
-
-.aboutImage {
+.aboutImageAbout {
   width: 35%;
 }
 
-.aboutItems {
+.aboutItemsAbout {
   color: var(--color-text);
   display: flex;
   flex-direction: column;
@@ -27,7 +18,7 @@
   margin-left: 20px;
 }
 
-.aboutItem {
+.aboutItemAbout {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -45,47 +36,47 @@
   gap: 40px;
 }
 
-.aboutItem:hover {
+.aboutItemAbout:hover {
   background-size: 100% 100%;
 }
 
-.aboutItem h3 {
+.aboutItemAbout h3 {
   font-size: 25px;
   font-weight: 600;
 }
 
-.aboutItem p {
+.aboutItemAbout p {
   font-size: 25px;
 }
 
 @media screen and (max-width: 830px) {
-  .container {
+  .containerAbout {
     background-color: transparent;
     padding-left: 0;
     padding-right: 0;
   }
-.title {
-  text-align: center;
-}
-  .content {
+  .titleAbout {
+    text-align: center;
+  }
+  .contentAbout {
     flex-direction: column;
   }
 
-  .aboutImage {
+  .aboutImageAbout {
     display: none;
   }
 
-  .aboutItems {
+  .aboutItemsAbout {
     margin-top: 29px;
   }
 
-  .aboutItem {
+  .aboutItemAbout {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-.animatedBtn {
+.animatedBtnAbout {
   padding: 12px 30px;
   font-size: 16px;
   text-decoration: none;
@@ -101,7 +92,7 @@
   overflow: hidden;
 }
 
-.animatedBtn::before {
+.animatedBtnAbout::before {
   content: "";
   position: absolute;
   top: 0;
@@ -113,11 +104,11 @@
   transition: left 0.5s ease;
 }
 
-.animatedBtn:hover::before {
+.animatedBtnAbout:hover::before {
   left: 125%;
 }
 
-.animatedBtn:hover {
+.animatedBtnAbout:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }

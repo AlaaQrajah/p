@@ -1,7 +1,6 @@
 @import "../vars.css";
 @import "../common.css";
-
-.container {
+.containerHero {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,7 +9,7 @@
   padding: 0 20px;
 }
 
-.content {
+.contentHero {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -19,7 +18,7 @@
   max-width: 600px;
 }
 
-.title {
+.titleHero {
   font-size: 72px;
   font-weight: 900;
   margin-bottom: 33px;
@@ -39,57 +38,19 @@
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-.description {
+.descriptionHero {
   font-size: 30px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
   line-height: 1.5;
 }
 
-.buttonGroup {
+.buttonGroupHero {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
-
-.animatedBtn {
-  padding: 12px 30px;
-  font-size: 16px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #fff;
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow: hidden;
-}
-
-.animatedBtn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -75%;
-  width: 50%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.3);
-  transform: skewX(-25deg);
-  transition: left 0.5s ease;
-}
-
-.animatedBtn:hover::before {
-  left: 125%;
-}
-
-.animatedBtn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-.secondaryBtn {
+.secondaryBtnHero {
   padding: 12px 30px;
   font-size: 16px;
   text-decoration: none;
@@ -104,12 +65,12 @@
   overflow: hidden;
 }
 
-.secondaryBtn:hover {
+.secondaryBtnHero:hover {
   background: rgba(110, 142, 251, 0.1);
   transform: scale(1.05);
 }
 
-.heroImg {
+.heroImgHero {
   width: 50%;
   max-width: 500px;
   z-index: 1;
@@ -132,7 +93,7 @@
   }
 }
 
-.topBlur {
+.topBlurHero {
   position: absolute;
   width: 50vw;
   height: 50vw;
@@ -146,7 +107,7 @@
   z-index: 0;
 }
 
-.bottomBlur {
+.bottomBlurHero {
   position: absolute;
   width: 70vw;
   height: 50vw;
@@ -182,18 +143,18 @@
 }
 
 @media screen and (max-width: 830px) {
-  .container {
+  .containerHero {
     flex-direction: column-reverse;
     padding: 0 15px;
   }
 
-  .content {
+  .contentHero {
     align-items: center;
     text-align: center;
     margin-top: 30px;
   }
 
-  .title {
+  .titleHero {
     font-size: 48px;
     white-space: normal;
     animation: none;
@@ -201,17 +162,17 @@
     text-align: center;
   }
 
-  .description {
+  .descriptionHero {
     font-size: 24px;
     text-align: center;
   }
 
-  .heroImg {
+  .heroImgHero {
     width: 80%;
     max-width: 300px;
   }
 
-  .buttonGroup {
+  .buttonGroupHero {
     justify-content: center;
   }
 }
